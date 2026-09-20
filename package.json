@@ -1,0 +1,26 @@
+{
+  "name": "auto-graystone-data",
+  "version": "1.0.0",
+  "private": true,
+  "description": "REST API that builds AutoGraystone personal-auto test data sets (POST /getAutoGraystoneData)",
+  "type": "module",
+  "main": "server.js",
+  "engines": {
+    "node": ">=20 <25"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test test/*.test.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "globals": "^16.0.0"
+  }
+}
